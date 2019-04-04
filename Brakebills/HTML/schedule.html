@@ -1,0 +1,56 @@
+<html>
+  <head>	
+    <meta charset="UTF-8">
+    <title> Welcome to Brakebills </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/wilq32/jqueryrotate/master/jQueryRotate.js"></script>
+    <script type="text/javascript" src="../JS/schedule.js"></script>
+    <script type="text/javascript" src="../JS/etape4.js"></script>
+    <script>
+      window.onload = cours_today();
+      window.onload = load_and_create();
+      window.onload = animation;
+      var forbidden = getCookie("forbidden");
+      var student = getCookie("student")
+      if (forbidden != "" || student == "") {
+      window.location = "index.html";
+      }
+      function getCookie(cname)
+      {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++)
+			 {
+			 var c = ca[i];
+			 while (c.charAt(0)==' ') {
+			 c = c.substring(1);
+			 }
+			 if (c.indexOf(name) == 0) {
+			 return c.substring(name.length,c.length);
+			 }
+			 }
+			 return "";
+			                          }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../CSS/schedule.css" />    
+  </head>
+<body><br/>
+  <a id="lien_titre" href="http://www.brakebillsu.com">
+    <h1 id="titre"> Welcome To Brakebills</h1>
+  </a>
+  <br/><br/>
+  <ul class="tab">
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, 'Today')">Today</a></li>
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, 'Tomorrow')">Tomorrow</a></li>
+  </ul>
+  
+  <div id="Today" class="tabcontent">
+    <h3>Today</h3>
+  </div>
+  
+  <div id="Tomorrow" class="tabcontent">
+    <h3>Tomorrow</h3>
+  </div>
+  
+</body>
+</html>

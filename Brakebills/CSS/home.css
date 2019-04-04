@@ -1,0 +1,74 @@
+body                                        
+{
+    background-image: url("../pictures/background/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lien_titre
+{ 
+text-decoration: none;
+color: grey; 
+}
+
+#titre                           
+{
+    text-align: center;
+    font-size: 60;
+    font-family: georgia;
+    color: grey;
+    box-shadow: 1px 1px 100px black;
+    text-shadow: 2px 2px 4px black;
+    margin: auto;
+}
+
+#titre1
+{
+    text-align: center;
+    color: black;
+    box-shadow: 1px 1px 100px black;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 90px;
+}
+
+#connection
+{
+  text-align:center;	
+}
+
+nav
+{
+    display: flex;
+}
+
+#login
+{
+    position: absolute;
+    margin-left: 47%;
+}
+#login1
+{
+    position: absolute;
+    margin-left: 45%;
+}
+
+#password
+{
+    position: absolute;
+    margin-left: 46.5%;
+    margin-top: 20px;
+}
+#password1
+{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+#bouton
+{
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 42px;
+}

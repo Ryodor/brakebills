@@ -1,0 +1,44 @@
+<html>
+  <head>	
+    <meta charset="UTF-8">
+    <title> Welcome to Brakebills </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/home.css" />
+    <script type="text/javascript" src="../JS/registration.js"></script>
+    <script type="text/javascript" src="../JS/password.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script>
+      var forbidden = getCookie("forbidden");
+      var student = getCookie("student")
+      if (forbidden == "" && student != "") {
+      window.location = "schedule.html";
+      } 
+      function getCookie(cname)
+      {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++)
+			 {
+			 var c = ca[i];
+			 while (c.charAt(0)==' ') {
+			 c = c.substring(1);
+			 }
+			 if (c.indexOf(name) == 0) {
+			 return c.substring(name.length,c.length);
+			 }
+			 }
+			 return "";
+			 }
+			 </script>
+  </head>
+  <body id="body"><br/>
+    <nav>
+      <p1 id="titre1" onclick="brakebills_connection()">.</p1>
+      <img src="../pictures/logo/logo_Brakebills.png" style="width:-20%; heigth:-20%;" > <br>
+      <h1 id="titre"> <a id="lien_titre" href="http://www.brakebillsu.com"> Welcome To Brakebills </a> </h1>
+      <img src="../pictures/logo/logo_Brakebills.png" style="width:-20%; height:-20%;"> <br>
+    </nav>
+    <br><br>
+    
+  </body>
+</html>
